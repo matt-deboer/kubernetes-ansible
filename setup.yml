@@ -2,22 +2,22 @@
 - hosts: all
   sudo: yes
   roles:
-          - common
+    - common
 
 - hosts: etcd
   sudo: yes
   roles:
-          - etcd
+    - etcd
 
 - hosts: masters
   sudo: yes
   roles:
-          - kubernetes
-          - master
-          - skydns
+    - kubernetes
+    - master
+    - skydns
 
 - hosts: minions
   sudo: yes
   roles:
-          - kubernetes
-          - minion
+    - kubernetes
+    - minion

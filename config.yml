@@ -1,0 +1,22 @@
+---
+masters:
+  count: 1
+  base_ip: "100.0.8."
+  cpus: 1
+  mem: 512
+  box:
+    name: "fedoracloud-22"
+    url: "http://download.fedoraproject.org/pub/fedora/linux/releases/22/Cloud/x86_64/Images/Fedora-Cloud-Base-Vagrant-22-20150521.x86_64.vagrant-virtualbox.box"
+    default_interface: "ansible_enp0s8"
+    pkg: yum
+minions:
+  count: 3
+  base_ip: "100.0.8."
+  cpus: 1
+  mem: 1024
+  box:
+    name: "fedoracloud-22"
+    url: "http://download.fedoraproject.org/pub/fedora/linux/releases/22/Cloud/x86_64/Images/Fedora-Cloud-Base-Vagrant-22-20150521.x86_64.vagrant-virtualbox.box"
+    default_interface: "ansible_enp0s8"
+    pkg: yum
+
